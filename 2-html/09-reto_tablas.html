@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Tablas</title>
+</head>
+<body>
+	<h1>Reto Tablas</h1>
+	<table border="1" width="150px">
+		<tr>
+		<td>X</td>
+        <td colspan="3"></td>
+        <td rowspan="4"></td>
+        <td rowspan="5"></td>
+	</tr>
+	<tr>
+		<td>X</td>
+		<td>X</td>
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+	<tr>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+	</tr>
+</body>
+</html>
+
+
+table>(tr>td{X}+td[colspan="3"]+td[rowspan="4"]+td[rowspan="5"])+(tr>td{X}+td{X}+td[colspan="2"])+(tr>td*3{X}+td)+(tr>td*4{X})+(tr>td*5{X})+(tr>td*6{X})

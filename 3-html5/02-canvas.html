@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<h1> Canvas </h1>
+    <h3>Cuadrado</h3>
+	<canvas id='cuadrado'>"</canvas>
+	<!-- -->
+	<h3>Rectangulo</h3>
+	<canvas id="rectangulo">"</canvas>
+	<!-- -->
+	<h3>Circulo</h3>
+	<canvas id="circulo">"</canvas>
+	<!-- -->
+	<h3>Triangulo</h3>
+	<canvas id="triangulo">"</canvas>
+	<!-- -->
+	<h3>Corazon</h3>
+	<canvas id="corazon">"</canvas>
+	<!-- -->
+	<h3>Texto</h3>
+	<canvas id="texto">"</canvas>
+	<!-- -->
+	<script>
+		var cuadrado = document.getElementById('cuadrado');
+		var rectangulo = document.getElementById('rectangulo');
+		var circulo = document.getElementById('circulo');
+		var triangulo = document.getElementById('triangulo');
+		var corazon = document.getElementById('corazon');
+		var texto = document.getElementById('texto');
+       // Cuadrado //	
+	 var	ctx1						=	cuadrado.getContext('2d');	
+	 ctx1.fillStyle='#a00';
+	 ctx1.fillRect(0,0,100,100);	
+       // Rectangulo //
+	 var	ctx2						=	rectangulo.getContext('2d');	
+	 ctx2.fillStyle='#0a0';
+	 ctx2.fillRect(10,10,200,200);
+	 // Circulo //	
+	 var	ctx3						=	circulo.getContext('2d');	
+	 ctx3.fillStyle='#500';
+	ctx3.beginPath();
+    ctx3.arc(100, 75, 50, 0, 2 * Math.PI);
+    ctx3.stroke();	
+	 // Triangulo //		
+	if (triangulo.getContext){
+    var ctx = triangulo.getContext('2d');
+
+    ctx.beginPath();
+    ctx.moveTo(75,50);
+    ctx.lineTo(100,75);
+    ctx.lineTo(100,25);
+    ctx.fill();
+  }
+	 // Corazon //	
+	 var	ctx5						=	corazon.getContext('2d');	
+	 ctx5.fillStyle='#0aa';
+	 ctx5.fillRect(0,0,100,100);	
+	 // Texto //	
+	 var	ctx6						=	texto.getContext('2d');	
+	 ctx6.font = "30px Arial";
+     ctx6.fillText("Hello World", 10, 50);	
+	</script>
+</body>
+</html>
