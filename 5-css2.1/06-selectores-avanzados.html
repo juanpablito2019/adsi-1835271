@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores Avanzados</title>
+	<style>
+		/* Selector Hijos */
+		ul > li {
+			background-color: #F08080;
+			margin: 4px;
+		}
+		/* Selector Adyacente */
+		ul li + li +li {
+			background-color: #FFEFD5;
+		}
+		/* Selector de Atributo */
+		li[class] {
+			background-color: #F0F8FF;
+		}
+	</style>
+</head>
+<body>
+	<h1>Selectores Avanzados</h1>
+	<ol>
+		<li>
+			Kimetsu No Yaiba
+			<ul>
+				<li class="super">Tangiro</li>
+				<li>Zenitse</li>
+				<li>Inosuke</li>
+			</ul>
+		</li>
+		<li>
+			Shingeki No Kyojin
+			<ul>
+				<li>Eren</li>
+				<li>Mikassa</li>
+				<li>Armin</li>
+			</ul>
+		</li>
+	</ol>
+</body>
+</html>
