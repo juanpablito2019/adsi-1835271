@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contenido Sobrante</title>
+<style>
+section.overflow {
+margin: 10px auto;
+width: 500px;
+}
+section.overflow div {
+border: 1px solid #F00;
+display: inline-block;
+height: 250px;
+padding: 10px;
+vertical-align: top;
+width: 140px;
+
+}
+section.overflow div h3 {
+background-color: #ccc;
+margin: 0px;
+padding: 10px;
+}
+section.overflow div.box1 { overflow: visible; }
+section.overflow div.box2 { overflow: hidden; }
+section.overflow div.box3 { overflow: scroll; }
+
+}
+
+
+</style>
+
+</head>
+<body>
+<main>
+<h1> Contenido Sobrante (overflow)</h1>
+<section class="overflow">
+<div class="box1">
+<h3>overflow:visible</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias perspiciatis magnam, sit nisi asperiores corporis optio quibusdam rem minus laboriosam expedita officiis quos aspernatur quae ipsa maxime eius voluptas ex praesentium animi. Perferendis vel expedita tempora dolore! Esse similique, suscipit ab aspernatur, vel, est odio unde aut, perspiciatis labore nam.</p>
+</div>
+<div class="box2">
+<h3>overflow:hidden</h3>
+<p>Vitae adipisci, illum praesentium neque blanditiis reprehenderit voluptas totam voluptates. Esse aperiam iste saepe at, ea ullam a quidem odio ipsa labore fugiat aut sed doloremque tenetur. Eius libero nemo quaerat deleniti rerum, consequuntur accusamus modi officia adipisci, in. Quaerat iusto quod nesciunt velit eveniet eius natus, dolorem, facere voluptate!</p>
+</div>
+<div class="box3">
+<h3>overflow:scroll</h3>
+<p>Repellat maiores reprehenderit dicta rem veritatis autem veniam placeat, quisquam amet ipsa ipsum dolore earum expedita a magni cupiditate optio itaque omnis magnam nisi harum totam nobis, alias? Facere unde natus fuga, hic earum nesciunt, architecto tempore beatae laudantium id accusantium, expedita corporis veritatis pariatur impedit. Maiores at laborum, minus!</p>
+</div>
+</section>
+</main>
+</body>
+</html>
