@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Texto (Espaciado)</title>
+	<style>
+		section.caja {
+			border: 10px auto;
+			margin: 1px auto solid #000;
+			width: 900px;
+			display: inline-block;
+		}
+		section.caja div {
+			border: 1px solid #aaa;
+			display: inline-block;
+			vertical-indent: top;
+			padding: 10px;
+			width: 400px;
+			vertical-align: top;
+		}
+		div.uno p {
+			letter-spacing: 1em;
+		}
+		div.dos p {
+			word-spacing: 1em;
+		}
+	</style>
+</head>
+<body>
+	<main>
+	<h1>Texto (Espaciado)</h1>
+	<section class="caja">
+	<div class="uno">
+	<h1>Letter-spacing : 1em</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dignissimos!</p>
+	</div>
+	<div class="dos">
+	<h1>word-spacing : 2em</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dignissimos!</p>
+	</div>
+	</main>
+</section>
+</body>
+</html>
