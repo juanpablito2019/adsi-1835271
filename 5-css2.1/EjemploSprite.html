@@ -2,41 +2,100 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sprite (Imagenes)</title>
+	<title>Pseudoclases Y Elementos</title>
 	<style>
-		h1{
+		body{
+			font: 16px;
+			font-family: 'Courier New', Courier, Monospace; 
+			background-color: rgb(35, 96, 133);
+		}
+		.cuadro {
+		background-color: lightsteelblue;
+		border-bottom: 1px solid gray;
+		padding: 20px 40px;
+		}
+		.total {
+		border: 20px solid lightsteelblue;
+		padding: 40px;
+		margin: 10px auto;
+		background-color: white;
+		border-bottom: 1px solid gray;
+		width: 600px;
+		height: 400px;
+		}
+		section#sprite {
+			background: url(imgs/spriteDos.png) no-repeat;
+			height : 120px; 
+			margin: 40px auto ;
+			width: 80px;
+		}
+		h1 {
+			font-family: 'Courier New', Courier, Monospace; 
 			text-align: center;
 		}
-		body {
-			background-color: rgb(25, 160, 83);
-		}
-		section#uno{
-			display: inline-block;
-			height : 600px; 
-			margin: 40px auto ;
+		nav.links {
+			margin: 10px auto;
 			width: 600px;
-			margin-left: 250px;
-			border: 1px solid rgb(222, 222, 222);
 		}
-		section#uno>article{
+
+		nav.links a {
 			display: inline-block;
-			background: url(imgs/spriteweb.png) no-repeat;
-			height: 200px;
-			width: 200px;
-			margin: 5px auto;
-			background-position: -465px 390px;
+			width: 115px;
 		}
-                         /*posicion         y     x */
+		nav.links a:link:first-child {
+			color: #010101;
+		}
+		nav.links a:link,
+		nav.links a:visited {
+			background-color: rgb(50, 96, 140);
+			color: #131315;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			border-bottom: 10px solid lightblue;
+		}
+		nav.links a:hover {
+			background-color: #B7CDF5;
+			color: #0b5244;
+			border-bottom: 10px solid #D3E2FE;
+		}
+		nav.links a:active {
+			background-color: #ad3C39;
+			border-bottom: 10px solid #642424;
+			color: #642424;
+		}
+		p {
+			width: 600px;
+			margin: 10ppx auto; 
+			padding: 10px;
+
+		}
+		p:first-letter {
+			color: #00a687;
+			font-size: 5em;
+		}
+		p:first-line {
+			background-color: #c5ffe6;
+			text-decoration: line-through;
+		}
 	</style>
 </head>
 <body>
 	<main>
-	<h1>Ejemplo</h1>
-	<section id="uno">
-		<article id="uno"></article>
-		<article id="dos"></article>
-		<article id="tres"></article>
+	<div class="cuadro">
+	<h1>Categorias de Comida</h1>
+	</div>
+	<nav class="links">
+		<a href="javascript:;">Frutas</a>
+		<a href="javascript:;">Carnes</a>
+		<a href="javascript:;">Bebidas</a>
+		<a href="javascript:;">Cereales</a>
+	</nav>
+	<section class="total">
+	<div class="cuadroUno">Este es el uno</div>
+	<div class="cuadroDos">Este es el dos</div>
 	</section>
-	</main>
+	<section id="sprite">Hola</section>
+</main>
 </body>
 </html>
