@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Sprite</title>
+	<style>
+		body{
+			font: 16px;
+			font-family: 'Courier New', Courier, Monospace; 
+			background-color: rgb(35, 96, 133);
+		}
+		.portada {
+		background-color: lightsteelblue;
+		border-bottom: 1px solid gray;
+		padding: 20px 40px;
+		}
+		.total1 {
+		border: 20px solid lightsteelblue;
+		padding: 40px;
+		margin-top:30px; 
+		margin-left: 600px;
+		background-color: white;
+		border-bottom: 1px solid gray;
+		width: 50px;
+		height: 50px;
+		}
+		.table {
+		border: 1px solid black;
+		padding: 10px;
+		margin: 20px auto;
+		width: 570px;
+		margin-left: 375px;
+		}
+		#spriteUno {
+			background: url(imgs/sprite.png) no-repeat;
+			background-position: 0px 0px;
+			height : 120px; 
+			width: 120px;
+		}
+		h1 {
+			font-family: 'Courier New', Courier, Monospace; 
+			text-align: center;
+		}
+		nav.links {
+			margin: 10px auto;
+			width: 600px;
+		}
+
+		nav.links a {
+			display: inline-block;
+			width: 115px;
+		}
+		nav.links a:link:first-child {
+			color: #010101;
+		}
+		nav.links a:link,
+		nav.links a:visited {
+			background-color: rgb(50, 96, 140);
+			color: #131315;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			border-bottom: 10px solid lightblue;
+		}
+		nav.links a:hover {
+			background-color: #B7CDF5;
+			color: #0b5244;
+			border-bottom: 10px solid #D3E2FE;
+		}
+		nav.links a:active {
+			background-color: #ad3C39;
+			border-bottom: 10px solid #642424;
+			color: #642424;
+		}
+		p {
+			width: 600px;
+			margin: 10ppx auto; 
+			padding: 10px;
+
+		}
+		p:first-letter {
+			color: #00a687;
+			font-size: 5em;
+		}
+		p:first-line {
+			background-color: #c5ffe6;
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<main>
+	<div class="portada">
+	<h1>Categorias de Comida</h1>
+	</div>
+	<nav class="links">
+		<a href="javascript:;">Frutas</a>
+		<a href="javascript:;">Carnes</a>
+		<a href="javascript:;">Bebidas</a>
+		<a href="javascript:;">Cereales</a>
+	</nav>
+	<table class="table">
+		<tr>
+			<td><section id="spriteUno"></section></td>
+			<td><section id="spriteUno"></section></td>
+			<td><section id="spriteUno"></section></td>
+			<td><section id="spriteUno"></section></td>
+		</tr>
+		<tr>
+			<td>Hola</td>
+			<td>Hola</td>
+			<td>Hola</td>
+			<td>Hola</td>
+		</tr>
+	</table>
+	<div id="spriteDos"></div>
+</main>
+</body>
+</html>

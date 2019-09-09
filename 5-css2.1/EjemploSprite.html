@@ -2,33 +2,94 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pseudoclases Y Elementos</title>
+	<title>Reto Sprite</title>
 	<style>
 		body{
 			font: 16px;
 			font-family: 'Courier New', Courier, Monospace; 
 			background-color: rgb(35, 96, 133);
 		}
-		.cuadro {
+		.portada {
 		background-color: lightsteelblue;
 		border-bottom: 1px solid gray;
 		padding: 20px 40px;
 		}
-		.total {
-		border: 20px solid lightsteelblue;
-		padding: 40px;
-		margin: 10px auto;
-		background-color: white;
-		border-bottom: 1px solid gray;
-		width: 600px;
-		height: 400px;
+		.table {
+		display: inline-block;
+		width: 568px;
+		text-align: center;
+		padding: 10px;
+		margin: 20px auto rgb(35, 96, 133);
+		border: 1px solid rgb(35, 96, 133);
 		}
-		section#sprite {
-			background: url(imgs/spriteDos.png) no-repeat;
+		section.dos {
+		margin-left: 200px;
+		display: inline-block;
+		width: 800px;
+		text-align: center;
+		padding: 10px;
+		margin: 20px auto rgb(35, 96, 133);
+		border: 1px solid rgb(35, 96, 133);
+		}
+		th {
+		font: 16px;
+		font-family: 'Courier New', Courier, Monospace; }
+		td.ultimo {border: 1px solid black;}
+		h1.bebidas {
+		font: 16px;
+		font-family: 'Courier New', Courier, Monospace; 
+		background-color: rgb(35, 96, 133);
+		}
+		#spriteUno,
+		#spriteDos,
+		#spriteTres,
+		#spriteCuatro,
+		#spriteCinco,
+		#spriteSeis,
+		#spriteSiete,
+		#spriteOcho,
+		#spriteNueve,
+		#spriteDiez,
+		#spriteOnce,
+		#spriteDoce,
+		#spriteTrece,
+		#spriteCatorce,
+		#spriteQuince,
+		#spriteDiez,
+		#spriteDoce,
+		#spriteTrece,
+		#spriteCatorce,
+		#spriteQuince,
+		#spriteDiezSeis,
+		#spriteDiezSiete,
+		#spriteDiezOcho
+		{
+			display: inline-block;
+			background: url(imgs/spriteTres.png) no-repeat;
 			height : 120px; 
 			margin: 40px auto ;
-			width: 80px;
+			width: 100px;
 		}
+		section#spriteUno {background-position: -70px 0px;}
+		section#spriteDos {background-position: -170px 0px;}
+		section#spriteTres {background-position: -270px 0px;}
+		section#spriteCuatro {background-position: -350px 0px;}
+		section#spriteCinco {background-position: -450px 0px;}
+		section#spriteSeis {background-position: -550px 0px;}
+
+		section#spriteSiete {background-position: -70px -110px;}
+		section#spriteOcho {background-position: -170px -110px;}
+		section#spriteNueve {background-position: -270px -110px;}
+		section#spriteDiez {background-position: -350px -110px;}
+		section#spriteOnce {background-position: -450px -110px;}
+		section#spriteDoce {background-position: -550px -110px;}
+
+		section#spriteTrece {background-position: -70px -220px;}
+		section#spriteCatorce {background-position: -170px -220px;}
+		section#spriteQuince {background-position: -260px -220px;}
+		section#spriteDiezSeis {background-position: -350px -220px;}
+		section#spriteDiezSiete {background-position: -450px -220px;}
+		section#spriteDiezOcho {background-position: -550px -220px;}
 		h1 {
 			font-family: 'Courier New', Courier, Monospace; 
 			text-align: center;
@@ -60,9 +121,9 @@
 			border-bottom: 10px solid #D3E2FE;
 		}
 		nav.links a:active {
-			background-color: #ad3C39;
-			border-bottom: 10px solid #642424;
-			color: #642424;
+			background-color: #D7F0FF;
+			border-bottom: 10px solid #D7F0FF;
+			color: #D7F0FF;
 		}
 		p {
 			width: 600px;
@@ -82,20 +143,72 @@
 </head>
 <body>
 	<main>
-	<div class="cuadro">
-	<h1>Categorias de Comida</h1>
-	</div>
+	<div class="portada">
+	<h1>¡Buenos Habitos!</h1>
 	<nav class="links">
-		<a href="javascript:;">Frutas</a>
-		<a href="javascript:;">Carnes</a>
-		<a href="javascript:;">Bebidas</a>
-		<a href="javascript:;">Cereales</a>
+		<a href="javascript:;">Comidas</a>
+		<a href="javascript:;">Rutinas</a>
+		<a href="javascript:;">Tips</a>
+		<a href="javascript:;">Contactanos</a>
 	</nav>
-	<section class="total">
-	<div class="cuadroUno">Este es el uno</div>
-	<div class="cuadroDos">Este es el dos</div>
+	</div>
+	<section class="dos">
+			<div>
+				<h1>Recomendados</h1>
+				<h2></h2>
+				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia fuga alias quas quos molestiae, tenetur facere excepturi enim nostrum beatae neque blanditiis in nesciunt delectus natus porro ducimus quisquam, unde est deserunt, error doloremque hic modi. Maiores maxime dolorem, animi optio architecto earum natus enim sunt fugit, asperiores officia, velit!</h1>
+			</div>
 	</section>
-	<section id="sprite">Hola</section>
+		<table class="table">
+		<tr>
+			<th>Frutas/Verduras</th>
+			<td><section id="spriteDiezOcho"></section></td>
+			<td><section id="spriteCuatro"></section></td>
+			<td><section id="spriteTres"></section></td>
+			<td><section id="spriteUno"></section></td>
+		</tr>
+		<tr>
+			<th>Carnes</th>
+			<td><section id="spriteCinco"></section></td>
+			<td><section id="spriteSeis"></section></td>
+			<td><section id="spriteNueve"></section></td>
+			<td><section id="spriteDiez"></section></td>
+		</tr>
+		<tr>
+			<th>Cereales</th>
+			<td><section id="spriteOnce"></section></td>
+			<td><section id="spriteDoce"></section></td>
+			<td><section id="spriteTrece"></section></td>
+			<td><section id="spriteCatorce"></section></td>
+		</tr>
+		<tr>
+			<th>Otros</th>
+			<td><section id="spriteQuince"></section></td>
+			<td><section id="spriteDiezSeis"></section></td>
+			<td><section id="spriteDiezSiete"></section></td>
+			<td><section id="spriteDos"></section></td>
+		</tr>
+		<tr>
+			<th>Bebidas</h1></th>
+			<td><section id="spriteSiete"></section></td>
+			<td><section id="spriteOcho"></section></td>
+		</tr>
+	</table>
+	<table class="table">
+		<tr>
+			<td><h1>Introduccion</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae debitis voluptatibus dolores deleniti dignissimos eaque provident inventore, molestias, magni ducimus dicta fugiat eligendi doloremque. Assumenda, cum, harum! Velit optio error, reprehenderit, magni aspernatur corporis iusto unde maiores qui autem consectetur repellat cupiditate labore quae porro magnam! Nemo, tempore laborum nam?</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ex dolore aperiam quidem totam quasi itaque quos ut quod voluptatum, quaerat. Ipsa recusandae voluptate laudantium, officia quidem minus quod quas, quo, similique eius impedit, facere iste. Quibusdam quo, possimus commodi quia corrupti? Itaque libero numquam vero hic odio culpa dolorem assumenda quod officia! Quaerat inventore aliquam, fugiat. Magnam praesentium facere soluta consequatur tempore maxime omnis beatae dolorum, odio accusantium doloremque animi earum dolore. Nihil aut aperiam laudantium, soluta perferendis, esse rem dolores obcaecati iusto reiciendis incidunt, possimus autem. Nisi ipsum a sapiente tempore error natus reiciendis fugiat, omnis labore. Eum!</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae ipsum vero optio delectus id voluptatum rerum sunt illo molestiae, voluptates, sapiente! Perspiciatis iure deleniti similique perferendis nam, accusamus optio cumque nesciunt reprehenderit possimus vitae, magnam ullam sapiente ea a earum necessitatibus consectetur. Corporis quod eveniet, consequuntur, enim exercitationem incidunt, nisi ipsa quas consequatur aliquam asperiores beatae recusandae, velit cumque vel facilis ab quia! Amet sint mollitia inventore, magni provident placeat, accusantium nobis labore ducimus cumque fugit odio eveniet eaque debitis aut facilis minus, sequi quidem quaerat tenetur. Consequuntur molestiae ex nulla, doloremque, neque officia sequi at repudiandae nemo atque.</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus laudantium odit dolores dolorum officiis et ipsa doloribus fuga. Maiores sunt id hic impedit voluptatem ad laboriosam, eveniet quod. Sint fuga quidem velit vel ullam deserunt officiis amet debitis minima a eligendi dolorum non necessitatibus ipsam soluta placeat quasi sequi excepturi, adipisci delectus cupiditate assumenda earum? Asperiores veritatis ea eius saepe delectus, pariatur, repudiandae commodi libero excepturi dicta vitae sunt aut est consequatur architecto impedit dolore adipisci, possimus fuga ad distinctio esse nulla perspiciatis? Quos cum eum fugiat quod, obcaecati excepturi recusandae minus animi soluta, quisquam a architecto beatae. Iste, soluta!</td>
+		</tr>
+	</table>
 </main>
 </body>
 </html>
