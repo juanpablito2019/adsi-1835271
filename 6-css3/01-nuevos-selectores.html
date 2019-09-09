@@ -15,6 +15,36 @@
 			background-color: #7ab862;
 			color: #3e5e35;
 		}
+		/* li : nth-child(3) */
+		ul.databases li:nth-child(3) {
+			background-color: #7ab862;
+			color: #3e5e35;
+		}
+		nav a:link,
+		nav a:visited {
+			color: #1d4e6f;
+		}
+		article {
+			display: none;
+		}
+		/* article#home:target */
+		article#home:target,
+		article#services:target,
+		article#contact:target {
+			background-color: #7ab862;
+			display: block;
+			color: #3e5e35;
+		}
+		/* selection :: */
+		p.yellow::selection {
+			background-color: yellow;
+		}
+			p.blue::selection {
+			background-color: blue;
+		}
+			p.red::selection {
+			background-color: red;
+		}
 	</style>
 </head>
 <body>
@@ -35,6 +65,36 @@
 				<li>CSS</li>
 				<li>JS</li>
 			</ul>
+			<h3>li:nth-child(n) (Selecciona el elemento numero n)</h3>
+			<ul class="databases">
+				<li>MySQL</li>
+				<li>Maria DB</li>
+				<li>Postgres</li>
+				<li>SQL Server</li>
+				<li>Oracle</li>
+			</ul>
+			<h3>section#home:target (Selecciona el ancla activa)</h3>
+			<nav>
+				<a href="#home">Home</a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<article id="home">
+				<h4>Home</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magnam delectus aperiam atque, dolor id, sint modi natus error, laboriosam maxime. Minus ducimus numquam vero. Sed temporibus accusantium, suscipit ullam!</p>
+			</article>
+			<article id="services">
+				<h4>Service</h4>
+				<p>Omnis sed distinctio architecto, voluptate aperiam doloribus, laboriosam repellat cum repudiandae ullam. Quaerat impedit cumque suscipit, veritatis exercitationem perspiciatis labore, possimus deserunt quibusdam magnam ex nesciunt iusto delectus ut, voluptate.</p>
+			</article>
+			<article id="contact">
+				<h4>Contact</h4>
+				<p>Amet impedit, optio nulla eveniet ipsam necessitatibus culpa. Nemo voluptate sit dicta rem pariatur, fugiat qui aliquam ex. Quo at enim quos beatae quibusdam veniam id. Deserunt voluptate in esse.</p>
+			</article>
+			<h3>::selection ()</h3>
+			<p class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aliquid veniam facilis? Adipisci ipsa, fuga sint reiciendis ipsam, cum obcaecati illum. Ipsa, facere magni quod quasi consequuntur in, est distinctio doloribus, eveniet rem quisquam aperiam accusamus provident quidem, aliquid consectetur autem a. Distinctio, voluptatem. Ipsam, dolor sed quas voluptatem ex.</p>
+			<p class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur odit nam consectetur possimus aliquid, delectus autem ullam incidunt molestiae esse voluptates facilis quisquam quos maxime, ad minima laudantium sed quasi magni. Illum laborum quos dolorem nam ipsa repellat, obcaecati dolor et est, modi culpa reiciendis laboriosam ea porro ab veniam.</p>
+			<p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla possimus ad ducimus laboriosam delectus, atque, eaque ipsum quisquam dolorem quo impedit quis totam? Quis et nulla, modi quibusdam? Eius placeat ut eum veritatis dolores porro illum, possimus soluta. Excepturi iste, quasi cupiditate sit aperiam, nobis sequi voluptatum beatae magnam iusto.</p>
 		</section>
 	</main>
 </body>
