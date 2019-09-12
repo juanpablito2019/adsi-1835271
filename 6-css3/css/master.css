@@ -21,6 +21,7 @@ main header h1 {
 	margin: 0px;
 }
 main header h3,
+main section h2,
 main header h4 {
 	text-align: center;
 }
