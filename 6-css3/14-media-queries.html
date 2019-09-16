@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Queries</title>
+	<style>
+		* {
+			transition: all 0.5s ease-in;
+		}
+		body {
+			background-color: #013571;
+			color: rgba(255,255,255,0.6);
+			font: 16px Verdana;
+		}
+		main {
+			border: 10px solid rgba(255,255,255,0.2);
+			margin: 20px auto;
+			padding: 20px;
+			width: 950px;
+		}
+		main figure.logo {
+			background: url(imgs/pepsi01.png) no-repeat center;
+			margin: 0px auto;
+			height: 354px;
+			width: 919px;
+		}
+		main h1 small.bp2,
+		main h1 small.bp3 {
+			display: none;
+		}
+		main p {
+			line-height: 1.8em;
+			text-align: justify;
+		}
+		@media (max-width: 1024px) {
+			main {
+				width: 740px;
+			}
+			main figure.logo {
+				background: url(imgs/pepsi02.png);
+				height: 370px;
+				width: 348px;
+			}
+			main h1.bp1,
+			main h1.bp3 {
+				display: none;
+			}
+			main h1 small.bp2 {
+				display: inline;
+			}
+				@media (max-width: 780px) {
+					main {
+						width: 380px;
+					}
+				}
+				main figure.logo {
+					background: url(imgs/pepsi03.png);
+					height: 156px;
+					width: 162px;
+				}
+				main h1 small.bp1,
+				main h1 small.bp2 {
+					display: none;
+				}
+				main h1 small.bp3 {
+					display: inline;
+				}
+
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<figure class="logo"></figure>
+		<h1>Media Queries <small> 1024px </small>
+		<small class="bp1">( Desktop: 1024px) </small>
+		<small class="bp2">( Desktop: 780px) </small>
+		<small class="bp3">( Desktop: 440px) </small>
+		</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sit amet consectetur odio, dolorem expedita a doloremque sint beatae voluptate molestias, quibusdam, ab minus laborum. Doloremque laboriosam labore recusandae voluptatem consequuntur quis, itaque provident animi exercitationem numquam sint eaque nam temporibus, rerum earum nobis minima consequatur expedita necessitatibus. Vero temporibus, explicabo quasi veniam id dolore, quas, excepturi libero cupiditate eveniet provident quos. Sed officiis cumque ipsa atque voluptate fuga magni ipsam, repellendus, eveniet voluptas, aliquam dolor laudantium. Laudantium enim iure debitis repellat, quos perferendis consectetur accusantium laborum nostrum quae deleniti aliquid similique reiciendis dolorum expedita, pariatur dolor nulla. Ratione reiciendis, molestiae quos dolor repudiandae consequatur itaque quisquam odit magnam nihil asperiores cupiditate, atque adipisci tenetur iusto nesciunt, deserunt facilis est dolore in omnis. Voluptate accusamus deserunt veniam doloremque accusantium optio vel blanditiis nulla. Eligendi dicta, est quod voluptatem cum esse maxime eos alias a aliquam tempora, deleniti. In minus veritatis veniam doloribus quos eveniet repellendus fugiat expedita cumque eos repudiandae, quidem magni illum voluptatem, officia neque. Pariatur a exercitationem minima non sint est, laboriosam nesciunt hic eius? Culpa ea tempore deserunt dignissimos debitis possimus numquam distinctio nihil, ipsum repellendus quisquam vero soluta rerum nisi non! Suscipit consequatur sed fugit quidem.</p>
+	</main>
+</body>
+</html>
