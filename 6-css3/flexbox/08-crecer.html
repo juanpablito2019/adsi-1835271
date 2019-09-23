@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex Align-Items</title>
+	<style>
+		body {
+			font: 16px Arial;
+			color: #666;
+		}
+		ul.fruits {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 768px;
+			list-style: none;
+			padding: 0px;
+			margin: 0px 10px;
+			align-items: stretch; 
+		}
+		ul.fruits2 {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 768px;
+			list-style: none;
+			padding: 0px;
+			margin: 0px 10px;
+			align-items: flex-start;
+		}
+		ul.fruits3 {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 768px;
+			list-style: none;
+			padding: 0px;
+			margin: 0px 10px;
+			align-items: flex-end;
+		}
+		ul.fruits4 {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 768px;
+			list-style: none;
+			padding: 0px;
+			margin: 0px 10px;
+			align-items: center;
+		}
+		ul.fruits5 {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 768px;
+			list-style: none;
+			padding: 0px;
+			margin: 0px 10px;
+			align-items: baseline;
+		}
+		ul li {
+			background-color: #c9e1d3;
+			border-radius: 4px;
+			margin: 4px;
+			width: 220px;	
+			height: 220px;
+		}
+		ul.fuits.option1 li:nth-of-type(1) {flex-grow: 3;}
+		ul.fuits.option1 li:nth-of-type(2) {flex-grow: 1;}
+	</style>
+</head>
+<body>
+	<h1>Flex Box : FLex-Grow </h1>
+	<ul class="fruits">
+		<li><img src="imgs/grapes.svg"></li>
+		<li><img src="imgs/orange.svg"></li>
+		<li><img src="imgs/pear.svg"></li>
+	</ul>
+</body>
+</html>

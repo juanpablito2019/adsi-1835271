@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		main{
+			width: 1048px;
+		}
+		section.parallax {
+			overflow: hidden;
+			position: relative;
+			width: 1024px;
+			height: 500px;
+			border: 1px solid black;
+		}
+		div {
+			position: absolute;
+			width: 2048px;
+			height: 500px;
+		}
+		section.otra {
+			overflow: hidden;
+			position: relative;
+			width: 1024px;
+			height: 500px;
+		}
+		div.dos {
+			background-image: url(imgs/alien.png);
+			background-size: cover;
+			animation: animLayer1 10s linear 1s infinite;
+			width: 300px;
+			height: 150px;
+			top: 295px;
+		}
+		div.layer1{
+			background-image: url(imgs/layer_01.png);
+			animation: animLayer 10s linear 1s infinite;
+		}
+		div.layer2{
+			background-image: url(imgs/layer_02.png);
+			animation: animLayer 20s linear 1s infinite;
+		}
+		div.layer3{
+			background-image: url(imgs/layer_03.png);
+			animation: animLayer 30s linear 1s infinite;
+		}
+		div.layer4{
+			background-image: url(imgs/layer_04.png);
+			animation: animLayer 40s linear 1s infinite;
+		}
+		div.layer5{
+			background-image: url(imgs/layer_05.png);
+			animation: animLayer 50s linear 1s infinite;
+		}
+		div.layer6{
+			background-image: url(imgs/layer_06.png);
+			animation: animLayer 60s linear 1s infinite;
+		}
+		div.layer7{
+			background-image: url(imgs/layer_07.png);
+			animation: animLayer 70s linear 1s infinite;
+		}
+		div.layer8{
+			background-image: url(imgs/layer_08.png);
+		}
+		@keyframes animLayer {
+			0%{
+				background-position: 0px;
+			}
+			100%{
+				background-position: -2048px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Parallax</h1>
+		</header>
+			<section class="parallax">
+				<div class="layer8"></div>
+				<div class="layer7"></div>
+				<div class="layer6"></div>
+				<div class="layer5"></div>
+				<div class="layer4"></div>
+				<div class="layer3"></div>
+				<div class="layer2"></div>
+				<div class="layer1"></div>
+				<section class="otra">
+					<div class="dos"></div>
+				</section>
+				
+	</main>
+</body>
+</html>
