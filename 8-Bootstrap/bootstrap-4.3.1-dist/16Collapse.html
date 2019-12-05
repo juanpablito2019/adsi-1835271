@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Collapse</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+               <p href="#bloque1" class="btn btn-success" aria-expanded="false" aria-controls="bloque1" data-toggle="collapse">
+                   Bloque1
+               </p>
+               <!--  -->
+               <div class="collapse" id="bloque1">
+                    <div class="card card-block">
+                        <div class="card-text ml-3">
+                            <h3>Título Card</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi ex nobis quos consequatur nisi natus, accusamus quas, quisquam vel voluptatem maxime? Ducimus inventore autem ea eligendi odit earum dicta.</p>
+                        </div>
+                    </div>
+               </div>
+               <!--  -->
+            </div>
+        </div>
+        <!-- Collapse en modo acordeón -->
+        <div class="row mt-3">
+            <div class="col">
+                <div id="acordeon" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>
+                                <a href="#collapse1" data-toggle="collapse" data-parent="#acordeon" aria-expanded="true" aria-controls="collapse1">
+                                    Contenido Acordeón
+                                </a>
+                            </h5>
+                        </div>
+                        <!--  -->
+                        <div id="collapse1" class="collapse">
+                            <div class="card-block ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque placeat nostrum, ipsa, dicta perferendis possimus alias voluptate ut modi tempore culpa excepturi velit voluptatum repudiandae, laborum sint assumenda! Nam, ad quae voluptatibus suscipit obcaecati provident amet nemo exercitationem iste tempore. In labore nesciunt quas ut vero exercitationem ducimus repellat?
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>
+                                <a href="#collapse2" data-toggle="collapse" data-parent="#acordeon" aria-expanded="true" aria-controls="collapse2">
+                                    Contenido Acordeón 2
+                                </a>
+                            </h5>
+                        </div>
+                        <!--  -->
+                        <div id="collapse2" class="collapse show">
+                            <div class="card-block ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque placeat nostrum, ipsa, dicta perferendis possimus alias voluptate ut modi tempore culpa excepturi velit voluptatum repudiandae, laborum sint assumenda! Nam, ad quae voluptatibus suscipit obcaecati provident amet nemo exercitationem iste tempore. In labore nesciunt quas ut vero exercitationem ducimus repellat?
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

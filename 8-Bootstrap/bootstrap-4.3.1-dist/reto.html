@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Reto Bootstrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+            body{
+                background:#C7F6B5;
+            }
+            .box {
+			width: 900px;
+			height: 500px;
+			padding: 10px;
+			margin: 20px auto;
+			border: 1px solid black;
+			display: inline-block;
+		    }
+		    .box1 {
+            position:absolute;
+            background: url(imgs/portada.jpg) no-repeat center;
+            background-size: cover;
+            }
+            .boxDos{
+            position: relative;
+            width: 200px;
+			height: 180px;
+			padding: 10px;
+			margin: 20px auto;
+			border: 1px solid black;
+			display: inline-block;
+            }
+            .imglogo {
+            background: url(imgs/logo.png) no-repeat center;
+            opacity: 0.5;
+            background-size: cover;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="portada">
+                    <div class="box box1"></div>
+                </div>
+                <div class="logo">
+                    <div class="boxDos imglogo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>	
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
